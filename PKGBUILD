@@ -5,8 +5,8 @@
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonic-decoration
-pkgver=6.6.5
-pkgrel=3
+pkgver=6.7.0
+pkgrel=1
 pkgdesc='Plugin based library to create window decorations'
 arch=(x86_64)
 url='https://github.com/Sonic-DE/sonic-decoration'
@@ -20,7 +20,7 @@ provides=(kdecoration)
 conflicts=(kdecoration)
 groups=(sonicde)
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('04c0560b9a159872cdeadb1f8840300a5403964ec32d27d00c9f85022110da1f')
+sha256sums=('407c3792a37b352774229206d4e1591956d7d0d65a8d87408197cde296ed0cd1')
 
 build() {
   cmake -B build -S $pkgname-$pkgver \
